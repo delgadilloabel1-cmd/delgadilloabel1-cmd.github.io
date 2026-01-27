@@ -24,7 +24,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("images/nyc-skyline-nice.jpg");
+  background-image: url("images/night-nyc.webp");
   background-size: cover;
   background-position: center;
   opacity: 0.08;
@@ -50,8 +50,8 @@ section {
 /* Title */
 .hero-title {
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.65em;
+  font-size: 1.3rem;
+  letter-spacing: 0.55em;
   text-transform: uppercase;
   color: #9caf88;
   margin-bottom: 1.2rem;
@@ -61,9 +61,14 @@ section {
 .hero-tagline {
   max-width: 520px;
   margin: 0 auto;
-  font-size: 0.95rem;
+  letter-spacing: 0.3rem;
+  font-size: 0.85rem;
   line-height: 1.8;
   color: rgba(245, 245, 242, 0.85);
+}
+
+.hero-tagline span {
+  margin: 0 0.7rem;
 }
 
 /* Nav Bar */
