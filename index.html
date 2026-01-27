@@ -5,85 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <!-- Introduction -->
-      <h1>Abel Delgadillo</h1>
-      <h1>Software Engineer</h1>
-      <!-- Nav Bar -->
-      <nav>
-        <ul>
-          <li><a href="Home">Home</a></li>
-          <li><a href="Projects">Projects</a></li>
-          <li><a href="About">About</a></li>
-          <li><a href="Contact Me">Contact Me</a></li>
-        </ul>
-      </nav>
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="hero-name">Abel Delgadillo</h1>
+        <h2 class="hero-title">Software Engineer</h2>
+        <p class="hero-tagline">
+          I build thoughtful, intentional web experiences.
+        </p>
+      </div>
     </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+      </ul>
+    </nav>
+
     <main>
       <!-- About Me -->
-      <section id="about-me">
-        <!-- H2 -->
-        <h2 id="section-header-1">About Me</h2>
-        <!-- Picture -->
-        <div id="picture-of-me">
-          <img src="images/i-rDxjwZ2-X4.jpg" alt="" />
-        </div>
-        <!-- Bio/Info -->
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-          nobis aperiam molestiae harum voluptatum, sapiente obcaecati
-          repellendus distinctio maiores, at provident quia reiciendis corrupti
-          ipsam, suscipit quibusdam. Debitis, cumque blanditiis!Lorem, ipsum
-          dolor sit amet consectetur adipisicing elit. Nihil officiis quasi
-          perspiciatis, maiores mollitia odio corrupti blanditiis et recusandae
-          accusamus vitae magnam? Ipsam dicta eius praesentium impedit! Esse,
-          ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          aliquid doloremque architecto deserunt ab corporis consectetur aperiam
-          sunt inventore, labore eaque odio reiciendis dolorum delectus. Non
-          pariatur amet incidunt quaerat.
-        </p>
-        <!-- About Me- Tech Skills -->
-        <div>
-          <h2>Technical Skills</h2>
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Node.js</li>
-            <li>Git</li>
-          </ul>
+      <section id="about-me" class="about">
+        <div class="about-container">
+          <div class="about-image fade-in">
+            <img src="images/i-rDxjwZ2-X4.jpg" alt="Photo of Abel Delgadillo" />
+          </div>
+
+          <div class="about-content">
+            <h2>About Me</h2>
+
+            <p>
+              I’m a software engineer with a passion for building thoughtful,
+              intentional web experiences. I enjoy translating ideas into clean,
+              accessible interfaces that feel intuitive and purposeful.
+            </p>
+
+            <div class="tech-stack">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Node.js</span>
+              <span>Git</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Projects -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Rock Paper Scissors</li>
-          <li>Recipe Card</li>
-          <li>Blah Blah Blah</li>
-        </ul>
+      <section id="projects" class="projects">
+        <div class="projects-container">
+          <h2>Selected Work</h2>
+
+          <!-- Featured Project -->
+          <div class="featured-project fade-in">
+            <h3>Featured Project</h3>
+            <p>
+              A brief description of your project goes here. What problem it
+              solves, what you learned, or why it matters.
+            </p>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+
+          <!-- Other Projects -->
+          <div class="other-projects">
+            <h4>Other Projects</h4>
+
+            <ul>
+              <li>
+                <span>Rock Paper Scissors</span>
+                <a
+                  href="https://github.com/delgadilloabel1-cmd/Rock-Paper-Scissors"
+                  >View →</a
+                >
+              </li>
+              <li>
+                <span>Recipe Card</span>
+                <a
+                  href="https://github.com/The-Marcy-Lab-School-Assignments/swe-3-1-recipe-card-delgadilloabel1-cmd"
+                  >View →</a
+                >
+              </li>
+              <li>
+                <span>Personal Portfolio</span>
+                <a
+                  href="https://github.com/delgadilloabel1-cmd/delgadilloabel1-cmd.github.io"
+                  >View →</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Me-->
-      <section id="contact-me">
-        <form action="">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <button>Submit Bitch!</button>
-        </form>
+      <section id="contact-me" class="contact">
+        <div class="contact-container">
+          <h2>Interested? Let’s Connect.</h2>
+          <p class="contact-subtext">
+            Whether you have a question, an opportunity, or just want to say
+            hello, my inbox is always open.
+          </p>
+
+          <form action="" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer></footer>
