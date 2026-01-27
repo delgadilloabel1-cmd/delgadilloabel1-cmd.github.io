@@ -1,0 +1,11 @@
+main {
+  background-color: #3b4f61;
+}
+
+header {
+  background-color: #d9a77b;
+}
+
+nav > a:hover {
+  color: #b08d57;
+}
