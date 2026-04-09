@@ -581,6 +581,13 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1.5rem; /* optional spacing between projects */
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
