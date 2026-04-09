@@ -609,6 +609,20 @@ section {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .hero-tagline {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* vertical alignment */
+    gap: 0.5rem; /* space between words/spans */
+    flex-wrap: nowrap; /* keep everything in a row */
+    text-align: center; /* fallback */
+  }
+
+  .hero-tagline span {
+    margin: 0; /* remove extra spacing from spans */
+  }
+}
 
 html {
   scroll-behavior: smooth;
