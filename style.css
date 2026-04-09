@@ -563,6 +563,23 @@ section {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .featured-layout img {
+    display: none;
+  }
+  /* Make text full width and center */
+  .featured-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text */
+    gap: 1.5rem; /* optional spacing */
+  }
+
+  .featured-layout .project-text {
+    width: 100%; /* ensure it fills container */
+  }
+}
 
 html {
   scroll-behavior: smooth;
